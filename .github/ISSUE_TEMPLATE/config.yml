@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/Yivas/cotilleo-convo-opencode/security/advisories/new
+    about: Report a vulnerability privately, without posting sensitive details in issues.
+  - name: Contribution guidance
+    url: https://github.com/Yivas/cotilleo-convo-opencode/blob/main/CONTRIBUTING.md
+    about: Scope, pull requests and documentation-only verification.

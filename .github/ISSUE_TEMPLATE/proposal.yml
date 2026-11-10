@@ -1,0 +1,38 @@
+name: Proposal
+description: Propose a user-facing capability or documentation change.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Planned capabilities are not implemented. Proposals do not authorize execution or installation.
+        Do not include private data. Security reports: https://github.com/Yivas/cotilleo-convo-opencode/security/advisories/new
+  - type: textarea
+    id: task
+    attributes:
+      label: User task and problem
+      description: Describe the OpenCode task without assuming APIs or behavior from another host.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope and boundaries
+      description: Include alternatives and permission or shared-resource implications.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Evidence of success
+      description: Explain what could be observed to verify the proposal without claiming it already works.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and understand this is pre-development.
+          required: true
+        - label: I removed sensitive data and this is not a private vulnerability report.
+          required: true

@@ -1,0 +1,53 @@
+name: Problem report
+description: Report an observable problem in the current repository content.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is documentation-only pre-development, not an implemented plugin.
+        Do not include credentials, private prompts, conversations, personal paths or model configuration.
+        Sensitive reports belong at https://github.com/Yivas/cotilleo-convo-opencode/security/advisories/new
+  - type: input
+    id: baseline
+    attributes:
+      label: Document or commit
+      description: Identify the current content. No supported plugin release exists yet.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Host and operating system
+      description: Include relevant versions, or state not applicable for a documentation problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include only a minimal sanitized example.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I understand there is no supported executable baseline yet.
+          required: true
+        - label: I removed sensitive data and this is not a private vulnerability report.
+          required: true
